@@ -1,0 +1,41 @@
+body {
+    background-color: cyan;
+    font-family: sans-serif;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+}
+
+.formula_section {
+    background-color: orange;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center; 
+    width: 300px; 
+}
+
+.formula_section h2 {
+    color: black;
+    font-weight: bold;
+}
+
+.formula_section input[type="text"] {
+    margin: 5px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    display: block; 
+    width: 280px; 
+    text-align: center;
+}
+
+formula {
+    display: block;
+    margin-top: 10px;
+    padding: 8px;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 280px; 
+}

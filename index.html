@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formula evaluator </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="formula_section">
+        <h2>Formula 1 : discount</h2>
+        <input type="text" id = "fee" placeholder="قیمت واحد" />
+        <input type="text" id = "number" placeholder="تعداد" />
+        <input type="text" id = "discount" placeholder="تخفیف" />
+        <formula id = "formula_1" evaluator="fee * number - discount"></formula>
+    </div>
+    <div class="formula_section">
+        <h2>Formula 2 : BMI</h2>
+        <input type="text" id = "height" placeholder="قد" />
+        <input type="text" id = "weight" placeholder="وزن" />
+        <formula id = "formula_2" evaluator="(weight / height) / height "></formula>
+    </div>
+    <div class="formula_section">
+        <h2>Formula 3 : average</h2>
+        <input type="text" id = "value1" placeholder="عدد اول" />
+        <input type="text" id = "value2" placeholder="عدد دوم" />
+        <formula id = "formula_3" evaluator="(value1 + value2) / 2"></formula>
+    </div>
+</body>
