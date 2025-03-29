@@ -29,13 +29,16 @@ document.addEventListener('DOMContentLoaded', () => {
         try {
           if (flag) {
             formulaElement.textContent = 'Invalid input';
+            formulaElement.style.color = 'red';
             return;
           }
           const result = eval(formulaString); 
-          formulaElement.textContent = `Result: ${result}`;
+          formulaElement.textContent = `Result: ${result.toFixed(2)}`;
+          formulaElement.style.color = 'green';
         } catch (error) {
           console.error('Error evaluating formula:', error);
           formulaElement.textContent = 'Error in formula';
+          formulaElement.style.color = 'red';
         }
       }
       updateFormula();
